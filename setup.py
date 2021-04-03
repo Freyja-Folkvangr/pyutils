@@ -12,7 +12,8 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Freyja-Folkvangr/pyutils",
-    packages=setuptools.find_packages(),
+    package_dir={"": "pyutils"},
+    packages=setuptools.find_packages(where="pyutils"),
     install_requires=[],
     classifiers=[
         "Programming Language :: Python :: 3",
